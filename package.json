@@ -18,5 +18,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkennedy08/s26wb19kennedy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pkennedy08/s26wb19kennedy/issues"
+  },
+  "homepage": "https://github.com/pkennedy08/s26wb19kennedy#readme"
 }
