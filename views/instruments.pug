@@ -2,20 +2,16 @@ extends layout
 
 block content
   h1= title
-  p server is running
+  - let results = [
+    {name: "Guitar", type: "String", price: 500},
+    {name: "Piano", type: "Keyboard", price: 1500},
+    {name: "Drum", type: "Percussion", price: 700}
+  ]
 
-  button(type="button", class="btn btn-secondary", onclick="reduce()") Sample Button
-  div(id="use") take some away
-
-  script.
-    let current = 11;
-    let quantity = 2;
-
-    function reduce() {
-      current = current - quantity;
-      if (current < 0) {
-        current = 0;
-      }
-      document.getElementById("use").innerHTML =
-        "Reduced by " + quantity + " to " + current;
-    }
+  div(class="container-fluid")
+    div(class="row")
+      each item in results
+        div(class="col-sm-2")
+          p #{item.name}
+          p #{item.type}
+          p #{item.price}
