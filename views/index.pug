@@ -3,8 +3,10 @@ extends layout
 block content
   h1= title
   p server is running
+
   button(type="button", class="btn btn-secondary", onclick="reduce()") Sample Button
   div(id="use") take some away
+
   script.
     let current = 11;
     let quantity = 2;
@@ -16,4 +18,4 @@ block content
       }
       document.getElementById("use").innerHTML =
         "Reduced by " + quantity + " to " + current;
-  }
+    }
