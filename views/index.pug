@@ -10,10 +10,10 @@ block content
     let quantity = 2;
 
     function reduce() {
-    current = current - quantity;
-    if (current < 0) {
-      current = 0;
-    }
-    document.getElementById("use").innerHTML =
-      "Reduced by " + quantity + " to " + current;
+      current = current - quantity;
+      if (current < 0) {
+        current = 0;
+      }
+      document.getElementById("use").innerHTML =
+        "Reduced by " + quantity + " to " + current;
   }
